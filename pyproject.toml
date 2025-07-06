@@ -1,0 +1,17 @@
+[project]
+name = "human-tar"
+version = "0.1.0"
+description = "A human-readable tar format for text files, based on grep . -r output"
+readme = "README.md"
+authors = [{name = "@readwithai", email = "talwrii@gmail.com"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.6"
+keywords = ["grep", "tar", "file-unpacking", "ai-tools"]
+
+[project.urls]
+Homepage = "https://github.com/talwrii/human-tar"
+Repository = "https://github.com/talwrii/human-tar"
+Issues = "https://github.com/talwrii/human-tar/issues"
+
+[project.scripts]
+human-tar = "human_tar.main:main"
