@@ -8,7 +8,7 @@ def parse_grep_line(line):
     try:
         # Split on the first ':' only
         filename, content = line.split(":", 1)
-        return filename.strip(), content.strip()
+        return filename.strip(), content  # Don't strip leading/trailing whitespace from content
     except ValueError:
         print(f"Warning: Skipping malformed line: {line.strip()}", file=sys.stderr)
         return None, None
