@@ -21,6 +21,10 @@ pipx install human-tar
 
 ## Usage
 `human-tar` will give you the output for the current *git repo* in this format.
+`human-tar bytes` tells you how many bytes each file is taking up.
+`human-tar exclude '*.json'` excludes all json iles
+`human-tar exclude files` excludes a files.
+
 
 `human-untar` unpacks the output in the form of `grep . -r` into the original file structure. It reads input from a file or stdin and writes files to the current directory by default.
 
