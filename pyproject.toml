@@ -1,6 +1,6 @@
 [project]
 name = "human-tar"
-version = "0.1.0"
+version = "0.2.0"
 description = "A human-readable tar format for text files, based on grep . -r output"
 readme = "README.md"
 authors = [{name = "@readwithai", email = "talwrii@gmail.com"}]
@@ -14,4 +14,5 @@ Repository = "https://github.com/talwrii/human-tar"
 Issues = "https://github.com/talwrii/human-tar/issues"
 
 [project.scripts]
-human-tar = "human_tar.main:main"
+human-tar = "human_tar.tar:main"
+human-untar = "human_tar.main:main"

@@ -20,28 +20,29 @@ pipx install human-tar
 ```
 
 ## Usage
-`human-tar` unpacks the output in the form of `grep . -r` into the original file structure. It reads input from a file or stdin and writes files to the current directory by default.
+`human-tar` will give you the output for the current *git repo* in this format.
+
+`human-untar` unpacks the output in the form of `grep . -r` into the original file structure. It reads input from a file or stdin and writes files to the current directory by default.
 
 ### Examples
 As a demonstraction, this command produces human-tar input using grep and feeds this into `human-tar`.
 
    ```bash
-   grep . -r /path/to/dir | human-tar
+   grep . -r /path/to/dir | human-untar
    ```
 
 You can also provide a path on the current directory or from the clipboard using xclip on linux or pblaste on mac
 
 ```bash
-human-tar file.txt
-human-tar <(xclip -o -selection CLIPBOARD)
+human-untar file.txt
+human-untar <(xclip -o -selection CLIPBOARD)
 ```
 
-For testing perposes, you might want to output into a different directory using the -o option
+For testing purposes, you might want to output into a different directory using the -o option
 
 ```bash
 human-tar file.text -o file
 ```
-
 
 ### Input Format
 The input should be in the format of `grep . -r` output, e.g.:
