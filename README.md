@@ -4,6 +4,8 @@
 
 A human-readable tar format for text files. Easy for AIs to write and read.
 
+This includes AI generated code. The interface is liable to change -- so do not use this in programs.
+
 ## Motivation
 I've been doing a little vibe-coding with online LLMs and found myself occasionally producing a number of files to share. While some online LLMs can produce tar files, this process is often buggy and slow compared to producing output like this (using prompts)
 
