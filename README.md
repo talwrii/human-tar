@@ -12,7 +12,7 @@ I've been doing a little vibe-coding with online LLMs and found myself occasiona
 ## Alternatives and prior Work
 This format is based on the output of `grep . -r .` - which can be used to produce output to give to an LLM (with the appropriate ignore flags)
 
-You could use cursor/windsurf or another AI tool to circumvent the need for this sort of tool. There are various tools to wrap up a codebase ready to be sent into an AI, but not necessarily the other way.
+You could use claude code cursor/windsurf or another AI tool to circumvent the need for this sort of tool. There are various tools to wrap up a codebase ready to be sent into an AI, but not necessarily the other way.
 
 ## Installation
 Install `human-tar` from PyPI using [pipx](https://github.com/pypa/pipx)
@@ -26,9 +26,12 @@ pipx install human-tar
 `human-tar bytes` tells you how many bytes each file is taking up.
 `human-tar exclude '*.json'` excludes all json iles
 `human-tar exclude files` excludes a files.
-
-
 `human-untar` unpacks the output in the form of `grep . -r` into the original file structure. It reads input from a file or stdin and writes files to the current directory by default.
+
+
+## Compression
+While very-readable, and the output of a `grep` a standard tool, the default output is longer than it needs to be causing claude to hit up against limits.
+
 
 ### Examples
 As a demonstraction, this command produces human-tar input using grep and feeds this into `human-tar`.
