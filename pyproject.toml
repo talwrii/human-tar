@@ -1,6 +1,6 @@
 [project]
 name = "human-tar"
-version = "3.0.1"
+version = "3.0.2"
 description = "A human-readable tar format for text files, based on grep . -r output"
 readme = "README.md"
 requires-python = ">=3.6"
